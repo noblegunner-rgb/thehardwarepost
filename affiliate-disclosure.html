@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Disclosure — The Hardware Post</title>
+  <meta name="description" content="How The Hardware Post makes money through affiliate partnerships, and what that means for you.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="images/logo-header.png" alt="The Hardware Post" class="header__logo-img">
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="/#guides">Buying Guides</a>
+        <a href="/#deals">Deals</a>
+        <a href="/#categories">Categories</a>
+        <a href="/#about">About</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-header">
+      <div class="container container--narrow">
+        <h1 class="article-header__title">How The Hardware Post Makes Money</h1>
+        <p class="article-header__meta">Last updated: April 2026</p>
+      </div>
+    </section>
+
+    <section class="article-body">
+      <div class="container container--narrow">
+        <p>The Hardware Post is a free resource for homeowners and DIY buyers. We make money through affiliate marketing — when you click a link on our site and buy a product, we may earn a commission from the retailer. This comes at no additional cost to you.</p>
+
+        <h2>Our Affiliate Partners</h2>
+        <p>We participate in affiliate programs with the following retailers:</p>
+        <ul>
+          <li><strong>Amazon Associates</strong> — As an Amazon Associate, The Hardware Post earns from qualifying purchases.</li>
+          <li><strong>Walmart Creator Program</strong></li>
+          <li><strong>Lowe's Creator Network</strong></li>
+          <li><strong>Home Depot Affiliate Program</strong></li>
+          <li><strong>Tractor Supply Affiliate Program</strong></li>
+        </ul>
+        <p>We may add or change partners over time.</p>
+
+        <h2>What This Means for You</h2>
+        <ul>
+          <li>We earn a commission (typically 1%–6% depending on the product and retailer) when you purchase through our links.</li>
+          <li>We only recommend products we believe are genuinely worth buying.</li>
+          <li><strong>Commission rates do not influence our product rankings or recommendations.</strong></li>
+          <li>If we receive a free product for review, we will disclose that separately.</li>
+          <li>If a post is sponsored (paid by a brand for placement), we will clearly label it as "Sponsored."</li>
+        </ul>
+
+        <h2>How We Pick Products</h2>
+        <p>Every product on this site goes through a scoring process that evaluates:</p>
+        <ul>
+          <li>Current discount vs. historical price</li>
+          <li>Review count and rating quality</li>
+          <li>Seasonal relevance</li>
+          <li>Content suitability and practical use case</li>
+          <li>Merchant trust and shipping reliability</li>
+          <li>Return risk</li>
+        </ul>
+        <p>Products that don't meet our quality bar don't get featured — regardless of commission rate.</p>
+
+        <h2>Questions?</h2>
+        <p>If you have questions about our affiliate relationships or how we select products, email us at <a href="mailto:contact@thehardwarepost.com">contact@thehardwarepost.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 The Hardware Post. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const t = document.querySelector('[data-theme-toggle]'), r = document.documentElement;
+      let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+      r.setAttribute('data-theme', d);
+      t && t.addEventListener('click', () => { d = d === 'dark' ? 'light' : 'dark'; r.setAttribute('data-theme', d); t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode'); t.innerHTML = d === 'dark' ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>' : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'; });
+    })();
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => { document.getElementById('nav').classList.toggle('active'); });
+  </script>
+</body>
+</html>

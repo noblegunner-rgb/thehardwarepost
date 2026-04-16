@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none">
+  <!-- The Hardware Post — Signpost Wordmark Logo -->
+  
+  <!-- Vertical post -->
+  <rect x="70" y="30" width="36" height="190" rx="4" fill="currentColor"/>
+  
+  <!-- Top cap/notch -->
+  <rect x="59" y="16" width="58" height="25" rx="4" fill="currentColor"/>
+  
+  <!-- Right sign — rounded P bowl (outer) -->
+  <rect x="106" y="62" width="48" height="50" fill="currentColor"/>
+  <ellipse cx="154" cy="87" rx="25" ry="25" fill="currentColor"/>
+  
+  <!-- Right sign — inner cutout (transparent bowl) -->
+  <rect x="106" y="72" width="38" height="30" fill="var(--logo-bg, #F5F3EF)"/>
+  <ellipse cx="144" cy="87" rx="15" ry="15" fill="var(--logo-bg, #F5F3EF)"/>
+  
+  <!-- Left arrow sign -->
+  <polygon points="70,135 0,135 -23,148 0,161 70,161" fill="currentColor"/>
+  
+  <!-- HP Hex Bolt -->
+  <g transform="translate(88, 168)">
+    <!-- Outer hex -->
+    <polygon points="0,-24 20.8,-12 20.8,12 0,24 -20.8,12 -20.8,-12" fill="currentColor"/>
+    <!-- Inner hex (cutout) -->
+    <polygon points="0,-17 14.7,-8.5 14.7,8.5 0,17 -14.7,8.5 -14.7,-8.5" fill="var(--logo-bg, #F5F3EF)"/>
+    <!-- H letter -->
+    <path d="M-9,-9 L-9,9 M-9,0 L-2,0 M-2,-9 L-2,9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- P letter -->
+    <path d="M3,9 L3,-9 L9,-9 Q13,-9 13,-4.5 Q13,0 9,0 L3,0" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- "The Hardware" text — top-aligned with cap -->
+  <text x="122" y="36" font-family="'DM Sans', sans-serif" font-weight="700" font-size="16" fill="currentColor" letter-spacing="0.5">The Hardware</text>
+  
+  <!-- "ost" text — bottom-aligned with sign -->
+  <text x="182" y="110" font-family="'DM Sans', sans-serif" font-weight="700" font-size="50" fill="currentColor">ost</text>
+</svg>
