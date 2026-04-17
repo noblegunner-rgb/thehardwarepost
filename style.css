@@ -424,6 +424,25 @@ a, button, [role="button"], input, textarea, select {
   .newsletter__form { flex-direction: column; }
 }
 
+/* Where-to-buy links */
+.where-to-buy {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+.where-to-buy a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.where-to-buy a:hover {
+  text-decoration: underline;
+}
+
 /* Kit form overrides — keep form consistent with site design */
 .formkit-form[data-uid="83792e4516"] {
   background: transparent !important;
